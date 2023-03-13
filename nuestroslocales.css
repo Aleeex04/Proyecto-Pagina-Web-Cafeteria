@@ -1,0 +1,144 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c7a17a;
+  height: 110px;
+  width: 1500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+}
+
+.imagen-cafe img {
+  max-width: 100px;
+  margin-left: 34px;
+}
+
+.barra-navegacion {
+  width: 100%;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  position: relative;
+  margin-left: 130px;
+  margin-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: none;
+  font-size: 1.3em;
+  font-family: fantasy;
+  cursor: pointer;
+}
+a:hover {
+  color:black;
+  transition: color 0,7s ease-out;
+
+}
+
+.recuadro {
+  background-color: rgba(143, 143, 143, 0.619);
+  height: 2305px;
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 1500px;
+  font-family: Arial, sans-serif;
+
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-top: 1px; /* Agrega un margen superior de 10px */
+}
+
+li ul li {
+  display: block;
+  background-color: rgb(109, 55, 14);
+  margin: 0;
+  padding: 0;
+}
+
+li ul li a {
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  color: white;
+}
+
+
+li:hover > ul {
+  display: block;
+  animation: slideDown 0.5s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+
+@keyframes slideDown {
+  0% {transform: translateY(1px);
+    opacity: 0;
+  }
+  100% {transform: translateY(0px);
+    opacity: 1;
+  }
+} 
+
+
+.mapas{
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr) ;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.recuadro {
+  display: flex;
+}
+
+.columna-izquierda {
+  flex-basis: 50%;
+  text-align: center;
+  margin-top: 210px;
+}
+
+.mapas-derecha {
+  flex-basis: 50%;
+  margin-top: 20px;
+}
+
+
+.Derechos {
+  background-color: #c7a17a;
+  height: 60px;
+  margin-left: 10px;
+  width: 1500px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: Arial, sans-serif;
+  display:flex; 
+  align-items: center;
+  gap: 220px;
+} 

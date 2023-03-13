@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reservas.css" title="style" />
+    <link rel="icon" type="image/jpg" href="cafee.jpg"/>
+    <title>Reservas | Mallorca Coffe Cup</title>
+</head>
+<body>
+  
+  <nav>
+    <div class="imagen-cafe">
+    <a href="index.html">
+        <img src="cafee.jpg" alt="Logo" href="index.html">
+    </a>
+    </div>
+    <div class="barra-navegacion">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="reservas.html" style="color: black;">Reservas</a></li>
+          <div class="submenu">
+            <li><a>Nuestros Locales</a>
+              <ul>
+                <li style="border-top-right-radius: 10px;border-top-left-radius: 10px;"><a href="nuestroslocales.html">Palma</a></li>
+                <li><a href="nuestroslocales.html">Inca</a></li>
+                <li><a href="nuestroslocales.html">Llucmajor</a></li>
+                <li style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;"><a href="nuestroslocales.html">Manacor</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="recuadro">
+      <div class="imagenabajo">
+        <img src="cafeteria.jpg">
+      
+      <div id="titulo">
+        <h2>RESERVAS</h2>
+      </div>
+
+      </div>
+
+      <h3 style="text-align: center;">Puedes hacer una Reserva para la fecha que desees</h3>
+    
+      <div class  ="recuadro-formulario">
+            <form method="post">
+            <div id="contenedores-contenido">
+              <br>
+                <label for="name"><b>Nombre de la reserva:</b></label>
+                <input type="text" id="name" name="nombre" placeholder="Introduce tu nombre" title="Pon tu nombre aquí" required style="width: 95%;">
+    
+                <label for="email"><b>Correo electrónico:</b></label>
+                <input type="email" id="email" name="correo" placeholder="ejemplo@ejemplo.com" title="Pon tu correo electrónico" required style="width: 95%;">
+    
+                <label for="telephone"><b>Teléfono:</b></label>
+                <input type="tel" id="telephone" name="telefono" placeholder="999 999 999" title="Pon tu numero de contacto" required>
+    
+                <label for="date"><b>Fecha:</b></label>
+                <input type="date" id="date" name="Fecha de reserva">
+
+                <label for="time"><b>Hora:</b></label>
+                <input type="time" id="time" name="Hora de reserva">
+                
+                <label for="personas"><b>Personas:</b></label>
+                  <select id="personas" name="personas" title="Selecciona el numero de personas" required>
+                  <option value="">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  </select>
+                <br>
+                <br>
+
+                <label for="message"><b>Mensaje (opcional):</b></label>
+                <br>
+                <textarea id="message" name="Mensaje"></textarea>
+
+                <label for="restaurante"><b>Ubicacion:</b></label>
+                <select id="restaurante" name="restaurante" title="Selecciona la cafeteria que prefieras" required>
+                    <option value=""><b>Selecciona una cafeteria</b></option>
+                    <option value="Palma01">Palma(Plaza España)</option>
+                    <option value="Palma02">Palma()</option>
+                    <option value="Palma03">Palma()</option>
+                    <option value="Manacor01">Manacor()</option>
+                    <option value="Inca01">Inca()</option>
+                    <option value="Llucmajor01">Llucmajor()</option>
+                </select>
+            </div>   
+                <div id="botones">
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">   
+                </div>
+            </div>
+            </form>
+    </div>
+    
+    <div class="Derechos">
+      <br>
+      <p>Todos los derechos reservados © 2023 Mallorca Coffe Cup</p>
+      <p>Política de privacidad | Términos y condiciones | Aviso legal</p>
+  </div> 
+</body>
+</html>
